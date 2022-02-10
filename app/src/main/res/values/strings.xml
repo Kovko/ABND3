@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Quiz App - ABND3</string>
+    <string name="europe">Europe</string>
+    <string name="globe_icon_alt">Globe Icon</string>
+    <string name="question_mark_icon">Question Mark Icon</string>
+</resources>
