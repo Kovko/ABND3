@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <style name="QuestionMountain">
+        <item name="android:background">#C72424</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="QuestionWater">
+        <item name="android:background">#3B50F5</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="QuestionCiv">
+        <item name="android:background">@color/question_civ_color</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="QuestionNumTextViewLight" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="QuestionTextLight" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="QuestionSelectAnswerLight" parent="QuestionTextLight">
+        <item name="buttonTint">@color/white</item>
+    </style>
+</resources>

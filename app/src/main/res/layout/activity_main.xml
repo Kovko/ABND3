@@ -42,8 +42,179 @@
         </RelativeLayout>
 
         <RelativeLayout
+            style="@style/QuestionMountain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/question_1_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/q_mountains" />
+
+            <TextView
+                android:id="@+id/question_num_1_text"
+                style="@style/QuestionNumTextViewLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/question_num_1" />
+
+            <TextView
+                android:id="@+id/question_1_text"
+                style="@style/QuestionTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_num_1_text"
+                android:layout_toRightOf="@id/question_1_img"
+                android:paddingLeft="8dp"
+                android:text="@string/question_1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_1_img"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    style="@style/QuestionSelectAnswerLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_1_1" />
+
+                <RadioButton
+                    style="@style/QuestionSelectAnswerLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_1_2" />
+
+                <RadioButton
+                    style="@style/QuestionSelectAnswerLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_1_3" />
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/QuestionWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/question_2_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/q_river" />
+
+            <TextView
+                android:id="@+id/question_num_2_text"
+                style="@style/QuestionNumTextViewLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/question_num_2" />
+
+            <TextView
+                android:id="@+id/question_2_text"
+                style="@style/QuestionTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_num_2_text"
+                android:layout_toRightOf="@id/question_2_img"
+                android:paddingLeft="8dp"
+                android:text="@string/question_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_2_img"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+                <CheckBox
+                    style="@style/QuestionSelectAnswerLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_2_1" />
+
+                <CheckBox
+                    style="@style/QuestionSelectAnswerLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_2_2" />
+
+                <CheckBox
+                    style="@style/QuestionSelectAnswerLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer_2_3" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/QuestionCiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/question_3_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/q_civ" />
+
+            <TextView
+                android:id="@+id/question_num_3_text"
+                style="@style/QuestionNumTextViewLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/question_num_3" />
+
+            <TextView
+                android:id="@+id/question_3_text"
+                style="@style/QuestionTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_num_3_text"
+                android:layout_toRightOf="@id/question_3_img"
+                android:paddingLeft="8dp"
+                android:text="@string/question_3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_below="@id/question_3_img"
+                android:autofillHints="Write answer here"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
 
         </RelativeLayout>
 
