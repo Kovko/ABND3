@@ -7,5 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="question_mountain_color">#C72424</color>
+    <color name="question_water_color">#3B50F5</color>
     <color name="question_civ_color">#9E873C</color>
+    <color name="question_nature_color">#29A33D</color>
 </resources>
