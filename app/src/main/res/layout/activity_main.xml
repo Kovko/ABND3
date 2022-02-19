@@ -87,6 +87,7 @@
                     android:text="@string/answer_1_2" />
 
                 <RadioButton
+                    android:id="@+id/question_1_rb3"
                     style="@style/QuestionSelectAnswerMountain"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -132,6 +133,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/question_2_chb1"
                     style="@style/QuestionSelectAnswerWater"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -139,6 +141,7 @@
                     android:text="@string/answer_2_1" />
 
                 <CheckBox
+                    android:id="@+id/question_2_chb2"
                     style="@style/QuestionSelectAnswerWater"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -146,6 +149,7 @@
                     android:text="@string/answer_2_2" />
 
                 <CheckBox
+                    android:id="@+id/question_2_chb3"
                     style="@style/QuestionSelectAnswerWater"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -186,6 +190,7 @@
                 android:text="@string/question_3" />
 
             <EditText
+                android:id="@+id/question_3_edit"
                 style="@style/QuestionSelectAnswerCiv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -239,6 +244,7 @@
                     android:text="@string/answer_4_1" />
 
                 <RadioButton
+                    android:id="@+id/question_4_rb2"
                     style="@style/QuestionSelectAnswerNature"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -284,6 +290,7 @@
                 android:text="@string/question_5" />
 
             <EditText
+                android:id="@+id/question_5_edit"
                 style="@style/QuestionSelectAnswerCiv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -336,6 +343,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/question_6_chb1"
                     style="@style/QuestionSelectAnswerMountain"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -343,6 +351,7 @@
                     android:text="@string/answer_6_1" />
 
                 <CheckBox
+                    android:id="@+id/question_6_chb2"
                     style="@style/QuestionSelectAnswerMountain"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -350,6 +359,7 @@
                     android:text="@string/answer_6_2" />
 
                 <CheckBox
+                    android:id="@+id/question_6_chb3"
                     style="@style/QuestionSelectAnswerMountain"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -401,6 +411,7 @@
                     android:text="@string/answer_7_1" />
 
                 <RadioButton
+                    android:id="@+id/question_7_rb2"
                     style="@style/QuestionSelectAnswerNature"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -453,6 +464,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/question_8_chb1"
                     style="@style/QuestionSelectAnswerCiv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -460,6 +472,7 @@
                     android:text="@string/answer_8_1" />
 
                 <CheckBox
+                    android:id="@+id/question_8_chb2"
                     style="@style/QuestionSelectAnswerCiv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -467,6 +480,7 @@
                     android:text="@string/answer_8_2" />
 
                 <CheckBox
+                    android:id="@+id/question_8_chb3"
                     style="@style/QuestionSelectAnswerCiv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -490,8 +504,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_marginBottom="16dp"
+                android:onClick="checkAnswers"
                 android:text="@string/check_answers"
-
                 />
 
         </RelativeLayout>
