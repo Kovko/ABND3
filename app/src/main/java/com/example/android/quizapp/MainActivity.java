@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int correctCount;
     private final int MAX_COUNT = 8;
 
     @Override
@@ -21,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswers(View view) {
-        correctCount = 0;
+        int correctCount = 0;
+
         correctCount += checkAnswer1();
         correctCount += checkAnswer2();
         correctCount += checkAnswer3();
@@ -35,13 +35,58 @@ public class MainActivity extends AppCompatActivity {
                 Toast.LENGTH_LONG).show();
     }
 
+    public void reset(View view) {
+        // question 1
+        ((RadioButton) findViewById(R.id.question_1_rb1)).setChecked(false);
+        ((RadioButton) findViewById(R.id.question_1_rb2)).setChecked(false);
+        ((RadioButton) findViewById(R.id.question_1_rb3)).setChecked(false);
+
+        // question 2
+        ((CheckBox) findViewById(R.id.question_2_chb1)).setChecked(false);
+        ((CheckBox) findViewById(R.id.question_2_chb2)).setChecked(false);
+        ((CheckBox) findViewById(R.id.question_2_chb3)).setChecked(false);
+
+        // question 3
+        ((EditText) findViewById(R.id.question_3_edit)).setText("");
+
+        // question 4
+        ((RadioButton) findViewById(R.id.question_4_rb1)).setChecked(false);
+        ((RadioButton) findViewById(R.id.question_4_rb2)).setChecked(false);
+        ((RadioButton) findViewById(R.id.question_4_rb3)).setChecked(false);
+
+        // question 5
+        ((EditText) findViewById(R.id.question_5_edit)).setText("");
+
+        // question 6
+        ((CheckBox) findViewById(R.id.question_6_chb1)).setChecked(false);
+        ((CheckBox) findViewById(R.id.question_6_chb2)).setChecked(false);
+        ((CheckBox) findViewById(R.id.question_6_chb3)).setChecked(false);
+
+        // question 7
+        ((RadioButton) findViewById(R.id.question_7_rb1)).setChecked(false);
+        ((RadioButton) findViewById(R.id.question_7_rb2)).setChecked(false);
+        ((RadioButton) findViewById(R.id.question_7_rb3)).setChecked(false);
+
+        // question 8
+        ((CheckBox) findViewById(R.id.question_8_chb1)).setChecked(false);
+        ((CheckBox) findViewById(R.id.question_8_chb2)).setChecked(false);
+        ((CheckBox) findViewById(R.id.question_8_chb3)).setChecked(false);
+
+    }
+
     // *****************************************
     // Methods - Answers Checks
     // *****************************************
 
     private int checkAnswer1() {
         RadioButton rb = findViewById(R.id.question_1_rb3);
-        return rb.isChecked() ? 1 : 0;
+
+        // if/else used because of Control Statements - rubric step
+        // other function use ? : operator
+        if (rb.isChecked())
+            return 1;
+        else
+            return 0;
     }
 
     private int checkAnswer2() {

@@ -45,4 +45,5 @@
     <string name="icon_tree">Tree Icon</string>
     <string name="icon_mountain">Mountain Icon</string>
     <string name="icon_city">City Icon</string>
+    <string name="reset">Reset</string>
 </resources>

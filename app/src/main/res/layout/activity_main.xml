@@ -73,6 +73,7 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/question_1_rb1"
                     style="@style/QuestionSelectAnswerMountain"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -80,6 +81,7 @@
                     android:text="@string/answer_1_1" />
 
                 <RadioButton
+                    android:id="@+id/question_1_rb2"
                     style="@style/QuestionSelectAnswerMountain"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -237,6 +239,7 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/question_4_rb1"
                     style="@style/QuestionSelectAnswerNature"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -252,6 +255,7 @@
                     android:text="@string/answer_4_2" />
 
                 <RadioButton
+                    android:id="@+id/question_4_rb3"
                     style="@style/QuestionSelectAnswerNature"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -404,6 +408,7 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/question_7_rb1"
                     style="@style/QuestionSelectAnswerNature"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -419,6 +424,7 @@
                     android:text="@string/answer_7_2" />
 
                 <RadioButton
+                    android:id="@+id/question_7_rb3"
                     style="@style/QuestionSelectAnswerNature"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -499,13 +505,21 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/check_answers_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="16dp"
                 android:onClick="checkAnswers"
-                android:text="@string/check_answers"
+                android:text="@string/check_answers" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/check_answers_btn"
+                android:onClick="reset"
+                android:text="@string/reset"
                 />
 
         </RelativeLayout>
